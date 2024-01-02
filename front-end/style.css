@@ -1,0 +1,148 @@
+:root{
+    --cor1:#4cc9f0;
+    --cor2:#4361ee;
+    --cor3:#3a0ca3;
+    --cor4:#7209b7;
+    --cor5:#f72585;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,var(--cor4),var(--cor1));
+    padding-top: 100px ;
+    text-align: center;
+}
+.conteiner{
+    position: absolute;
+    padding-top: 10px ;
+    border-radius: 20px;
+    background-color:transparent;
+    width: 320px;
+    min-height: 600px;
+    border: 1px solid black;
+    padding-bottom: 20px;
+    top: 10%;
+    left: 50%;
+    translate: -50% 0%;
+}
+.pesquisa{
+    position: relative;
+    display: inline-block;
+    background-color: var(--cor4);
+    border-radius: 10px;
+    width: 210px;
+    margin-top: 20px ;
+    padding: 0px 0px 5px 0px;
+    scale: 1.2;
+}
+.pesquisa>span{
+    color: var(--cor1);
+    scale: 0.8;
+    translate: 0% 25%;
+}
+#pesquisa{
+    color: var(--cor2);
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+}
+button{
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: var(--cor4);
+    color: white;
+    &:hover{
+        background-color: var(--cor3);
+    }
+}
+#adc-nota{
+    position: relative;
+    border-radius: 1px;
+    padding: 0px 3px;
+    scale: 1.8;
+    translate: 180% 0%;
+}
+.adc-screen{
+    display: none;
+    position: absolute;
+    background-color: var(--cor2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.658);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1em;
+    translate: 0% 6%;
+}
+.voltar{
+    border-radius: 5px;
+}
+#nome{
+    font-size: 1.0em;
+    border-radius: 5px;
+}
+#desc{
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+#valor{
+    font-size: 1.0em;
+    width: 50px;
+}
+.criar{
+    padding: 2px;
+    border-radius: 2px;
+}
+.nota{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.658);
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    width: 250px;
+    height: 300px;
+}
+.header-note{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.header-note>button{
+    border-radius: 5px;
+    margin: 5px;
+    width: 30px;
+}
+.nota>h2{
+    margin: 10px;
+}
+.desc{
+    text-indent: 20px;
+    width: 220px;
+    height: 100px;
+    text-align: justify;
+    margin: 10px;
+}
+.desc>textarea{
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+.value>input{
+    font-size: 1.0em;
+    width: 50px;
+}
+.value>button{
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.footer-note{
+    margin-top: 20px;
+    width: 200px;
+    margin: auto;
+}

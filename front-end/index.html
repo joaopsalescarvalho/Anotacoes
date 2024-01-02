@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Anotações</title>
+</head>
+<body>
+    <div class="conteiner">
+
+        <label class='pesquisa' for="pesquisa">
+            <span class="material-symbols-outlined">
+                search
+                </span>
+            <input type="search" id="pesquisa">
+        </label>
+        <button id="adc-nota">+</button>
+        <div class="adc-screen">
+            <button class="voltar"><span class="material-symbols-outlined">
+                arrow_back
+                </span></button>
+            <label for="nome">Nome:
+                <input type="text" id="nome">
+            </label><br>
+            <label for="desc">Descrição: <br>
+                <textarea id="desc" cols="30" rows="10"></textarea>
+            </label><br>
+            <label for="valor">Valor:
+                <input type="text" id="valor">
+            </label>
+            <button class="criar">Criar</button>
+        </div>
+
+        <section class="anotacoes">
+            
+
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
