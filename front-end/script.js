@@ -10,7 +10,7 @@ const inputValor = document.getElementById("valor");
 let emptyArray = [];
 
 const fetchNotes = async () => {
-  const res = await fetch("http://localhost:10000/notes");
+  const res = await fetch("http://localhost:3333/notes");
   const notes = await res.json();
 
   return notes;
@@ -23,7 +23,7 @@ const addNote = async () => {
     valor: inputValor.value,
   };
 
-  await fetch("http://localhost:10000/notes", {
+  await fetch("http://localhost:3333/notes", {
     method: "post",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(note),
@@ -37,13 +37,13 @@ const addNote = async () => {
 };
 
 const deleteTask = async (id) => {
-  await fetch(`http://localhost:10000/notes/${id}`, { method: "delete" });
+  await fetch(`http://localhost:3333/notes/${id}`, { method: "delete" });
 
   loadNotes();
 };
 
 const updateNote = async ({ id, descricao, valor }) => {
-  await fetch(`http://localhost:10000/notes/${id}`, {
+  await fetch(`http://localhost:3333/notes/${id}`, {
     method: "put",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ descricao, valor }),
