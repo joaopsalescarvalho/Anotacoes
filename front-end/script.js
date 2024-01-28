@@ -10,7 +10,7 @@ const inputValor = document.getElementById("valor");
 let emptyArray = [];
 
 const fetchNotes = async () => {
-  const res = await fetch("https://agenda-front-k8f9.onrender.com:10000/notes");
+  const res = await fetch("https://agenda-qvpp.onrender.com:10000/notes");
   const notes = await res.json();
 
   return notes;
