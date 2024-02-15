@@ -10,5 +10,6 @@ const connection = mysql.createPool({
 
 })
 
+console.log('acessou o connection')
 
 module.exports = connection

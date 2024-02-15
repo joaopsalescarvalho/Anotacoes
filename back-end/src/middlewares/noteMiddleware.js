@@ -39,6 +39,8 @@ const validateValor = (req, res, next) => {
     next()
 }
 
+console.log('acessou o middleware')
+
 module.exports = {
     validateNome,
     validateDescricao,

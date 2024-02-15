@@ -35,6 +35,8 @@ const updateNote = async (id, notes) => {
     return updatedNote
 }
 
+console.log('acessou o model')
+
 module.exports = {
     getAll,
     createNote,

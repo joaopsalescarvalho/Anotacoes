@@ -14,5 +14,6 @@ router.post('/notes',
 router.delete('/notes/:id', noteController.deleteNote)
 router.put('/notes/:id',noteMiddleware.validateValor, noteController.updateNote)
 
+console.log('acessou o router')
 
 module.exports = router

@@ -28,6 +28,8 @@ const updateNote = async (req, res) => {
     return res.status(204).json();
 }
 
+console.log('acessou o controller')
+
 module.exports = {
     getAll,
     createNote,
