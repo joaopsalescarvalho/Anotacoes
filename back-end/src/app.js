@@ -13,6 +13,4 @@ app.use((req, res, next) => {
 });
 app.use(router)
 
-console.log('acessou o app')
-
 module.exports = app
